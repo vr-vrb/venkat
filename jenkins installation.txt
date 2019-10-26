@@ -1,0 +1,18 @@
+ 30  sudo yum install jenkins
+   31  service jenkins status
+   32  curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.                                                                                                             repo | sudo tee /etc/yum.repos.d/jenkins.repo
+   33  sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+   34  sudo yum install jenkins
+   38  /etc/init.d/iptables stop
+   39  service jenkins status
+   40  service jenkins start
+   41  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   42  sudo chkconfig --add jenkins
+   43  yum install git
+   44  cat .bash_profile                   
+                           export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el6_10.x86_64
+                           export MAVEN_HOME=/root/apache-maven-3.6.2
+                           export M2=$MAVEN_HOME/bin
+                           PATH=$PATH:$M2:$HOME/bin
+
+   45  history

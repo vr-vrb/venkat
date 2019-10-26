@@ -1,0 +1,18 @@
+
+ 23  yum install wget
+   27  wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.tar.gz
+   29  tar -xvzf apache-maven-3.6.2-bin.tar.gz  
+   34  vi .bash_profile        -------------------------------=User specific environment and startup programs
+                                                                export MAVEN_HOME=/root/apache-maven-3.6.2
+                                                                export M2=$MAVEN_HOME/bin
+                                                                PATH=$PATH:$M2:HOME/bin
+                                                                export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.222.b10-0.el6_10.x86_64
+
+            this is path......          /root/apache-maven-3.6.2
+
+   35  source .bash_profile
+   36  echo $MAVEN_HOME
+   40  mvn --version
+   
+
+
